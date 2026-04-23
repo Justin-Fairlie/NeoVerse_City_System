@@ -1,0 +1,32 @@
+﻿{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build NeoVerse",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-Wall",
+                "-Wextra",
+                "-O2",
+                "-g",
+                "src/Engineer.cpp",
+                "src/CityData.cpp",
+                "src/Event.cpp",
+                "src/CityZone.cpp",
+                "src/SystemReports.cpp",
+                "src/FileManager.cpp",
+                "src/main.cpp",
+                "-o",
+                "build/neoverse.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile NeoVerse City System"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+﻿system_version=1.0
+last_startup=20260116
+max_events_per_second=100
+emergency_timeout=300
+city_name=NeoVerse_Metro
+default_clearance=LOW
+last_save=1776335717
+last_save=1776335985
+last_save=1776336121
+last_save=1776336219
+last_save=1776336545
+last_save=1776336706
+last_save=1776402732
+last_save=1776849620
+last_save=1776850548
