@@ -9,9 +9,9 @@
 
 struct SensorReading {
     time_t timestamp;
-    double energyUsage;      // MW
-    int trafficDensity;      // vehicles per km
-    double populationDensity; // people per km²
+    double energyUsage;      
+    int trafficDensity;      
+    double populationDensity; 
     std::string zone;
     
     void display() const;
@@ -62,7 +62,7 @@ public:
     //   - Access: O(n) - sequential only
     //   - Insert anywhere: O(1) with iterator
     //   - Delete: O(1) with iterator
-    //   - Suitable for unbounded logs due to dynamic node allocation
+    //   - It's Suitable for unbounded logs due to dynamic node allocation
 };
 
 #endif

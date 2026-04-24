@@ -11,8 +11,8 @@ bool FileManager::saveEngineers(const std::vector<Engineer>& engineers, const st
     file.write(reinterpret_cast<const char*>(&count), sizeof(count));
     
     for (const auto& eng : engineers) {
-        // Simplified: In production, serialize properly
-        // For demo, we'll just save the essential data
+        
+        // Just save the essential data
         std::string id = eng.getEngineerID();
         std::string username = eng.getUsername();
         std::string pwd = eng.getEncryptedPassword();

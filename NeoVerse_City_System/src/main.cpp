@@ -59,7 +59,7 @@ void demonstratePolymorphism() {
     }
 }
 
-// Main entry point of the program
+//Start of program
 int main() {
     std::cout << "=== NEOVERSE AI CITY SURVIVAL SYSTEM ===" << std::endl;
     std::cout << "Initializing system components...\n" << std::endl;
@@ -318,20 +318,19 @@ int main() {
                 std::cout << "Goodbye, Engineer " << username << "!" << std::endl;
                 break;
             
-            // Handle invalid input    
+             
             default:
                 std::cout << "Invalid choice. Please try again." << std::endl;
         }
         
-        // After each menu choice (except exit), wait for user to press Enter
-        // This gives the user time to read the output before showing the menu again
+        
         if (choice != 0) {
             std::cout << "\nPress Enter to continue...";
             std::cin.ignore();
             std::cin.get();
         }
         
-    } while (choice != 0);  // Keep showing menu until user selects "Exit" (0)
+    } while (choice != 0);  
     
-    return 0;  // Program finished successfully
+    return 0;  
 }

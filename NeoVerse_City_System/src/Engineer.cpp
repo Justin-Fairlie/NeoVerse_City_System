@@ -52,8 +52,8 @@ void Engineer::display() const {
 AuthSystem::AuthSystem() {
     // Load default engineers
     addEngineer(Engineer("ENG001", "admin", "admin123", ClearanceLevel::HIGH));
-    addEngineer(Engineer("ENG002", "operator", "op456", ClearanceLevel::MEDIUM));
-    addEngineer(Engineer("ENG003", "viewer", "view789", ClearanceLevel::LOW));
+    addEngineer(Engineer("ENG002", "operator", "Operator321!", ClearanceLevel::MEDIUM));
+    addEngineer(Engineer("ENG003", "viewer", "View789!", ClearanceLevel::LOW));
 }
 
 void AuthSystem::addEngineer(const Engineer& eng) {
@@ -63,7 +63,7 @@ void AuthSystem::addEngineer(const Engineer& eng) {
 // Big-O Complexity: O(n) - Linear search
 // Space Complexity: O(1)
 // Justification: Small dataset (engineers < 100), 
-// simple implementation, no sorting overhead
+
 bool AuthSystem::login(const std::string& username, const std::string& password, 
                        ClearanceLevel& level) {
     auto it = std::find_if(engineers.begin(), engineers.end(),

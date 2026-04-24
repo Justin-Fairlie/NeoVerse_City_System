@@ -8,7 +8,7 @@
 #include <algorithm>
 #include <ctime>
 
-// ADD THIS FORWARD DECLARATION
+
 class CityDataManager;
 
 enum class EventType {
@@ -56,13 +56,13 @@ private:
     std::stack<EmergencyEvent> emergencyStack;
     std::vector<Event> processedEvents;
     
-    // ADD THIS - Pointer to CityDataManager
+    // Pointer to CityDataManager
     CityDataManager* dataManager;
     
 public:
     EventProcessor();
     
-    // ADD THIS - Setter for CityDataManager
+    // Setter for CityDataManager
     void setDataManager(CityDataManager* dm);
     
     void addEvent(const Event& e);

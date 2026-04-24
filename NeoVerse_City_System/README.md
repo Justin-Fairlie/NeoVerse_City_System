@@ -1,17 +1,17 @@
-﻿# NeoVerse: AI City Survival System
+# NeoVerse: AI City Survival System
 
 ## Overview
 A console-based C++ simulation system that manages a smart city's data, events, and agents using STL containers, algorithms, and object-oriented programming principles. This system demonstrates dynamic data structures, algorithm efficiency, and real-world problem solving.
 
-## Login Credentials
-- Username: `admin`, Password: `admin123` (HIGH clearance)
-- Username: `operator`, Password: `op456` (MEDIUM clearance)
-- Username: `viewer`, Password: `view789` (LOW clearance)
 
 ## How to Build and Run
-1. Open this folder in VS Code
-2. Run `make` in the terminal to build
-3. Run `make run` or `./build/neoverse.exe` to execute
+1. cd to correct directory so it will be 'cd NeoVerse_City_System' 
+2. Then Run `make run` or `./build/neoverse.exe` to execute
+
+## Login Credentials
+- Username: `admin`, Password: `admin123` (HIGH clearance)
+- Username: `operator`, Password: `Operator321!` (MEDIUM clearance)
+- Username: `viewer`, Password: `View789!` (LOW clearance)
 
 ## Features Implemented
 

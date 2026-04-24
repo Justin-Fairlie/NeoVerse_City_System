@@ -74,7 +74,7 @@ SensorReading& CityDataManager::getReading(int index) {
 }
 
 void CityDataManager::addHistoricalLog(const CityLog& log) {
-    historicalLogs.push_back(log);  // O(1) - list advantage for unbounded growth
+    historicalLogs.push_back(log);  // O(1) - list advantage
 }
 
 void CityDataManager::trimHistoricalLogs(size_t maxSize) {

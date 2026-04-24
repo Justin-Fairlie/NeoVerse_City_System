@@ -1,7 +1,7 @@
 #include "CityZone.h"
 #include <cmath>
 
-// Base class implementation
+// The Base class implementation
 CityZone::CityZone(const std::string& name, int pop, double energy)
     : zoneName(name), population(pop), energyConsumption(energy) {
     std::cout << "CityZone [" << zoneName << "] constructed." << std::endl;

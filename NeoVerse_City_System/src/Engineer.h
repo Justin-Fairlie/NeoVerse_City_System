@@ -51,8 +51,8 @@ public:
     const std::vector<Engineer>& getEngineers() const { return engineers; }
     
     // Big-O: Linear search O(n) - suitable for small engineer database
-    // Binary search would require sorting which is O(n log n) overhead
-    // For n < 100, linear is acceptable
+    
+    
 };
 
 #endif
