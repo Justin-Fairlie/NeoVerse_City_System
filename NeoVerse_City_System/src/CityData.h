@@ -28,22 +28,30 @@ struct CityLog {
 
 class CityDataManager {
 private:
-    std::vector<SensorReading> dailyReadings;    // Fast random access O(1)
-    std::list<CityLog> historicalLogs;            // Unbounded growth O(1) insertion
+    std::vector<SensorReading> dailyReadings;    
+    // Fast random access O(1)
+    std::list<CityLog> historicalLogs;            
+    // Unbounded growth O(1) insertion
     
 public:
     CityDataManager();
     
     // Vector operations
     void addSensorReading(const SensorReading& reading);  // Amortized O(1)
-    void removeOldReadings(int daysToKeep);               // O(n)
-    void displayAllReadings() const;                      // O(n)
-    SensorReading& getReading(int index);                 // O(1) - vector advantage
+    void removeOldReadings(int daysToKeep);   
+    // O(n)
+    void displayAllReadings() const;                      
+    // O(n)
+    SensorReading& getReading(int index);                 
+    // O(1) - vector advantage
     
     // List operations
-    void addHistoricalLog(const CityLog& log);            // O(1) - list advantage
-    void trimHistoricalLogs(size_t maxSize);                 // O(n)
-    void displayAllLogs() const;                          // O(n)
+    void addHistoricalLog(const CityLog& log);            
+    // O(1) - list advantage
+    void trimHistoricalLogs(size_t maxSize);                 
+    // O(n)
+    void displayAllLogs() const;                          
+    // O(n)
     
     // Analytics
     double getAverageEnergyUsage() const;
